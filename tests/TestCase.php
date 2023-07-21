@@ -8,10 +8,4 @@ use SebastianBergmann\Type\VoidType;
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
-
-    protected function setUp(): Void {
-        parent::setUp();
-
-        $this->withoutVite();
-    }
 }
