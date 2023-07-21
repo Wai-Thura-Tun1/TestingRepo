@@ -25,10 +25,7 @@ jobs:
       with:
         node-version: 14
     - name: Clear node_modules and reinstall
-      run:
-        rm -rf node_modules
-        rm package-lock.json
-        npm install
+      run: npm install autoprefixer --save-dev
     - name: Build assets with Vite
       run: npm run build
     - name: Generate key
